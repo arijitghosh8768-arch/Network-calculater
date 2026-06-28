@@ -1,0 +1,29 @@
+# Node / Frontend dependencies & build outputs
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+
+# Environments & secrets
+.env
+.env.*
+!.env.example
+
+# IDEs & system files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
