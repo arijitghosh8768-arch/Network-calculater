@@ -459,6 +459,8 @@ export const VlsmFlsmCalc: React.FC<VlsmFlsmCalcProps> = ({ apiConnected }) => {
                       <th className="px-4 py-3">Mask / CIDR</th>
                       <th className="px-4 py-3">Usable Host Range</th>
                       <th className="px-4 py-3">Usable Hosts</th>
+                      <th className="px-4 py-3">Broadcast Address</th>
+                      <th className="px-4 py-3">Subnet Mask</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-800/80 bg-gray-950/10 text-xs text-gray-300 font-mono">
@@ -469,6 +471,8 @@ export const VlsmFlsmCalc: React.FC<VlsmFlsmCalcProps> = ({ apiConnected }) => {
                         <td className="px-4 py-3">{s.netmask} (/{s.cidr})</td>
                         <td className="px-4 py-3">{s.first_host} - {s.last_host}</td>
                         <td className="px-4 py-3">{s.usable_hosts.toLocaleString()}</td>
+                        <td className="px-4 py-3 text-amber-400/90">{s.broadcast_address}</td>
+                        <td className="px-4 py-3 text-gray-400">{s.netmask}</td>
                       </tr>
                     ))}
                   </tbody>
