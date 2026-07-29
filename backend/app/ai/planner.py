@@ -133,7 +133,7 @@ def get_network_advice(query: str, api_key: str = None):
         current_addr = subnet.broadcast_address + 1
 
     # Format the advice markdown
-    advice = f"""### R-Zenith NetCalc AI Architect Suggestions
+    advice = f"""### NetCalc AI Architect Suggestions
 
 Based on your query: *"{query}"*, here is a premium subnet and network planning proposal.
 

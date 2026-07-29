@@ -12,7 +12,7 @@ export const AiPlanner: React.FC<AiPlannerProps> = ({ apiConnected }) => {
   const [messages, setMessages] = useState<any[]>([
     {
       sender: 'assistant',
-      text: "Hello! I am your R-Zenith AI Network Planning Assistant. Send me your department specifications, host numbers, or routing requirements and I will lay out a complete subnet proposal, including CIDR prefix recommendations, VLSM allocations, and Cisco device configuration blocks."
+      text: "Hello! I am your AI Network Planning Assistant. Send me your department specifications, host numbers, or routing requirements and I will lay out a complete subnet proposal, including CIDR prefix recommendations, VLSM allocations, and Cisco device configuration blocks."
     }
   ]);
   const [loading, setLoading] = useState(false);
@@ -45,7 +45,7 @@ export const AiPlanner: React.FC<AiPlannerProps> = ({ apiConnected }) => {
 
   const getLocalAdvice = (_q: string): string => {
     // Generate a fallback advice layout mimicking the backend's local engine
-    return `### R-Zenith NetCalc Offline Architect Suggestions
+    return `### NetCalc Offline Architect Suggestions
 
 You are currently running in **Offline Mode**. Here is an offline-engineered subnet plan:
 

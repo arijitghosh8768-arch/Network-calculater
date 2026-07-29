@@ -34,7 +34,7 @@ from .engine.analyzer import parse_cisco_config
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="R-Zenith NetCalc Pro API",
+    title="NetCalc Pro API",
     description="Advanced Subnetting Engine, VLSM/FLSM Allocator, & Network Planning Assistant Suite",
     version="1.0.0"
 )
@@ -51,7 +51,7 @@ app.add_middleware(
 # --- HOME/STATUS ---
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to R-Zenith NetCalc Pro API", "status": "online"}
+    return {"message": "Welcome to NetCalc Pro API", "status": "online"}
 
 # --- SUBNET ENGINE ENDPOINTS ---
 @app.post("/api/calculate/ipv4")

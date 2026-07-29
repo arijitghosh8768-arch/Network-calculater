@@ -3,7 +3,7 @@ import ipaddress
 
 def design_architect_plan(requirements: dict):
     """
-    R-Zenith NetArchitect X Design Generation Engine.
+    NetArchitect X Design Generation Engine.
     Processes advanced network parameters and returns structured layouts, LLD/HLD docs,
     configs, topologies, and security plans.
     """
@@ -162,7 +162,7 @@ def design_architect_plan(requirements: dict):
     cisco_configs.extend([
         "!",
         "! ===============================================",
-        f"! R-Zenith NetArchitect X Auto Configuration Engine",
+        f"! NetArchitect X Auto Configuration Engine",
         f"! Profile: {company} - {arch_style}",
         "! ===============================================",
         "!",
@@ -262,7 +262,7 @@ def get_hld_lld_documents(requirements: dict, design: dict):
     Generates structured LLD, HLD and SOP document templates for NetArchitect X.
     """
     hld = f"""# High-Level Design (HLD): {design['company']} Enterprise Network
-**Architect Version:** R-Zenith NetArchitect X LLD Engine
+**Architect Version:** NetArchitect X LLD Engine
 **Scope:** {requirements.get('users', 500)} Users, {requirements.get('floors', 3)} Floors, {requirements.get('branches', 1)} branches.
 
 ## 1. Network Overview & Strategy

@@ -25,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, apiConn
         </div>
         <div>
           <h1 className="text-xl font-bold tracking-tight text-white m-0 flex items-center gap-2">
-            R-Zenith <span className="text-indigo-400 font-medium">NetCalc Pro</span>
+            <span className="text-indigo-400 font-medium">NetCalc Pro</span>
           </h1>
           <p className="text-xs text-gray-400 text-left">Advanced Network Planning Suite</p>
         </div>

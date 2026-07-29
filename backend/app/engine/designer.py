@@ -214,7 +214,7 @@ def generate_packet_tracer_lab(design: dict):
     for vp in design.get("vlan_plans", []):
         vlan_table += f"| {vp['vlan_id']} | {vp['vlan_name']} | {vp['network']}/{vp['cidr']} | {vp['gateway']} |\n"
 
-    lab_content = f"""# CCNA Enterprise Network Design Lab: R-Zenith NetDesigner
+    lab_content = f"""# CCNA Enterprise Network Design Lab: NetDesigner
 
 ## Objectives
 1. Set up Inter-VLAN routing on Router **R1** using Router-on-a-Stick.

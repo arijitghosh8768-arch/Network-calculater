@@ -37,7 +37,7 @@ function App() {
       {/* Module Selector Top Bar */}
       <div className="bg-gray-900 border-b border-gray-850 px-6 py-2.5 flex items-center justify-between text-xs font-semibold gap-4">
         <div className="flex items-center gap-3">
-          <span className="text-gray-400 uppercase tracking-widest">R-Zenith Suite Ecosystem:</span>
+          <span className="text-gray-400 uppercase tracking-widest">Suite Ecosystem:</span>
           <div className="flex bg-gray-950 p-0.5 rounded-lg border border-gray-850">
             <button
               onClick={() => setCurrentModule('calc')}
@@ -79,7 +79,7 @@ function App() {
       )}
 
       <footer className="w-full py-6 border-t border-gray-900 bg-gray-950 text-center text-xs text-gray-500">
-        <p>© 2026 R-Zenith NetCalc & NetDesigner. Built for Cyber Security & Network Professionals.</p>
+        <p>© 2026 NetCalc & NetDesigner. Built for Cyber Security & Network Professionals.</p>
       </footer>
     </div>
   );

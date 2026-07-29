@@ -26,7 +26,7 @@ export const PtAnalyzer: React.FC<PtAnalyzerProps> = ({ apiConnected }) => {
   // Selected vendor for migration
   const [selectedMigrationVendor, setSelectedMigrationVendor] = useState<'juniper' | 'nxos' | 'huawei' | 'mikrotik'>('juniper');
 
-  const DEMO_CONFIG = `! R-Zenith Enterprise Branch Configuration
+  const DEMO_CONFIG = `! Enterprise Branch Configuration
 hostname Core-Router-R1
 interface GigabitEthernet0/0
  description Link to Core-Switch-SW1

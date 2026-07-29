@@ -46,7 +46,7 @@ export const NetArchitectX: React.FC<NetArchitectXProps> = ({ apiConnected }) =>
   // AI Copilot state
   const [copilotPrompt, setCopilotPrompt] = useState('Build a secure bank branch with 100 users, CCTV, VoIP, and redundant HSRP gateways.');
   const [copilotChat, setCopilotChat] = useState<any[]>([
-    { sender: 'assistant', text: "Welcome to R-Zenith NetArchitect X AI Copilot. Enter network instructions and I will auto-generate topologies, VLAN plans, multi-vendor CLI configurations, and troubleshooting manuals." }
+    { sender: 'assistant', text: "Welcome to NetArchitect X AI Copilot. Enter network instructions and I will auto-generate topologies, VLAN plans, multi-vendor CLI configurations, and troubleshooting manuals." }
   ]);
 
   const handleGenerateDesign = async () => {
@@ -240,7 +240,7 @@ export const NetArchitectX: React.FC<NetArchitectXProps> = ({ apiConnected }) =>
             <Settings className="w-6 h-6 text-indigo-400" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-white m-0 font-sans">R-Zenith NetArchitect X</h2>
+            <h2 className="text-xl font-bold text-white m-0 font-sans">NetArchitect X</h2>
             <p className="text-xs text-gray-400 font-sans">Design, secure, translate, simulate, and automate enterprise networks in one unified digital twin platform.</p>
             {loading && <span className="text-[10px] text-indigo-400 animate-pulse font-semibold font-mono uppercase tracking-wider block mt-1">AI Architect designing network...</span>}
           </div>

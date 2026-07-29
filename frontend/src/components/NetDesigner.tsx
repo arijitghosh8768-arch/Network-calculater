@@ -205,7 +205,7 @@ export const NetDesigner: React.FC<NetDesignerProps> = ({ apiConnected }) => {
             <Settings className="w-6 h-6 text-indigo-400" />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-white m-0">R-Zenith NetDesigner</h2>
+            <h2 className="text-xl font-bold text-white m-0">NetDesigner</h2>
             <p className="text-xs text-gray-400">Convert requirements into detailed, CCNA-ready network designs and copy-pasteable Cisco configuration statements.</p>
           </div>
         </div>
